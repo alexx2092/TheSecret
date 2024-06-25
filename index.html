@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecretWorld</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-family: 'Cinzel', serif;
+        }
+
+        .latest-articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .latest-articles .article {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            width: calc(33% - 20px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1a1a1a;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #444444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="SecretWorld Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#about">Despre Noi</a></li>
+                <li><a href="#theories">Teorii</a></li>
+                <li><a href="#secrets">Secrete</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Bine ai venit la SecretWorld</h1>
+            <p>Descoperă cele mai mari conspirații și secrete ale lumii.</p>
+            <div class="latest-articles">
+                <!-- Articole recente -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>Despre Noi</h2>
+            <p>SecretWorld este locul unde descoperi cele mai mari teorii ale conspirației și secrete bine păstrate.</p>
+        </section>
+        <section id="theories">
+            <h2>Teorii</h2>
+            <div class="categories">
+                <div class="category">Guvern</div>
+                <div class="category">Extratereștri</div>
+                <div class="category">Tehnologie</div>
+                <div class="category">Istorie</div>
+            </div>
+        </section>
+        <section id="secrets">
+            <h2>Secrete</h2>
+            <!-- Articole despre secrete -->
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <!-- Articole de blog -->
+        </section>
+        <section id="forum">
+            <h2>Forum</h2>
+            <!-- Discuții forum -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SecretWorld. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
